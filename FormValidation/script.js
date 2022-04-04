@@ -46,7 +46,7 @@ function valudatephone(){
     let contectphone = document.getElementById("contect-phone").value;
     if (contectphone.length==0) {
 
-    contectphone.innerHTML = "phone no required";
+    phoneError.innerHTML = "phone no required";
      return false
     }
     if(contectphone.length!==10){
@@ -85,7 +85,7 @@ valudateEmail();
 
 // messege
 function valudatemssg() {
-    let contectMessg = document.getElementById("contect - messg").value;
+    let contectMessg = document.getElementById("contect-messg").value;
     let requird=30;
   
     let left = requird - contectMessg.length;
@@ -98,7 +98,7 @@ function valudatemssg() {
 }
 
 
-// foem
+// form
 
 let submiterror = document.getElementById("submit-error");
 function valudationForm() {
